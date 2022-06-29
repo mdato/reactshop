@@ -8,11 +8,11 @@
 }
 
 .card{
-  height: 310px;
+  height: 320px;
 }
 
 .card-img-top{
-  height: 180px;
+  height: 200px;
 }
 
 .card-body{
@@ -84,6 +84,20 @@
 .summary {
   width: 30%;
   font-size: 20px;
+}
+
+
+
+.card span{
+  font-size: 12px !important;
+}
+
+.card button{
+  font-size: 10px !important;
+}
+
+.card-title {
+  font-size: 18px !important;
 }
 
 /* Media Queries */
