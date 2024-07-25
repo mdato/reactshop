@@ -1,6 +1,8 @@
 import { Card, Button } from "react-bootstrap";
 import { TrolleyState } from "../context/Context";
 
+const foto = "https://picsum.photos/200"
+
 const ProductBase = ({ prod }) => {
   const {
     state: { trolley },
@@ -10,7 +12,7 @@ const ProductBase = ({ prod }) => {
   return (
     <div className="products">
       <Card>
-        <Card.Img variant="top" src={prod.image} alt={prod.name} />
+        <Card.Img variant="top" src={foto} alt={prod.name} />
         <Card.Body>
           <Card.Title>{prod.name}</Card.Title>
           <Card.Subtitle style={{ paddingBottom: 10 }}>

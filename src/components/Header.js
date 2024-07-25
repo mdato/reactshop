@@ -13,6 +13,9 @@ import { Link, useLocation } from "react-router-dom";
 import { TrolleyState } from "../context/Context";
 import "./styles.css";
 
+
+const foto = "https://picsum.photos/200"
+
 const Header = () => {
   const {
     state: { trolley },
@@ -60,7 +63,7 @@ const Header = () => {
                   {trolley.map((prod) => (
                     <span className="trolleyitem" key={prod.id}>
                       <img
-                        src={prod.image}
+                        src={foto}
                         className="trolleyItemImg"
                         alt={prod.name}
                       />

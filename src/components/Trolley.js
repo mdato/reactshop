@@ -3,6 +3,8 @@ import { Button, Col, Form, Image, ListGroup, Row } from "react-bootstrap";
 import { AiFillDelete } from "react-icons/ai";
 import { TrolleyState } from "../context/Context";
 
+const foto = "https://picsum.photos/200"
+
 const Trolley = () => {
   const {
     state: { trolley },
@@ -24,7 +26,8 @@ const Trolley = () => {
             <ListGroup.Item key={prod.id}>
               <Row>
                 <Col md={2}>
-                  <Image src={prod.image} alt={prod.name} fluid rounded />
+                   {/* <Image src={foto} alt={prod.name} fluid rounded /> */}
+                  <Image src={foto} alt={prod.name} fluid rounded />
                 </Col>
                 <Col md={2}>
                   <span>{prod.name}</span>
